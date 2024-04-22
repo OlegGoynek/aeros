@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Combat T order form</title>
+    <script type="text/javascript" src="cbt_t.js"></script>
+    <link rel="stylesheet" type="text/css" href="cbt_t.css">
+    
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/cbt_t_76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/cbt_t_120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/cbt_t_152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/cbt_t_180.png">
+  </head>
+  <body> 
+  
+  <div id="div_readme_bg">
+      <div id="div_readme_frame">
+          <h2 id="read_me_header">About this order-form</h2>
+          <div id="div_readme">
+          <p>We hope this order form will ease the process of choosing colors and materials, so you could order exactly the glider you want.</p>
+          <h3>Colors and shapes</h3>
+          <p>Please keep in mind, though: colors that you see on the display do not exactly match the colors of materials! The structure of cloth is not represented at all. Transparency and colors of materials in reality also depend on lighting conditions.<br/> This order form contains the sketch, that should only give you an idea about how the whole assembly will look like.<br/> Trike and wing representation is very approximate. On trike - only colors are changing. Engine assembly, pylon fairing, saddle bags and other options do not affect the picture.</p>
+          <h3>Combat T and ANT trike options</h3>
+          <p>You can use this form to order both wing and trike, or only the wing - select respective order option. If you order only the wing, trike colors are still available for selecting in form - that is just to make a complete picture. <br>
+          * We install an engine kill switch with rescue system. If you decide to use your own rescue system, you may order a kill switch separately. In that case please mention it in 'notes' section along with required cable length.</p>
+          
+          <h3>Filling the form and Placing the order</h3>
+          <p>You can choose most of colors by clicking on the wing panel or trike part. Colors of ribs and batten pockets, and all other options are available via form menu. When ready, click the <b>DOWNLOAD PDF</b> button on the bottom of page. A <i>.pdf</i> file will open in a new tab/window or you will be prompted to save/open the file.<br/>Please, check the order form thoroughly and send it to your dealer or to <a href="mailto:info@aeros.com.ua?Subject=Order%20form" target="_top">info@aeros.com.ua</a>.</p>
+
+<!--
+          <h3>Compatibility</h3>
+          <p>This form has been tested in latest versions of Safari, Chrome, Firefox and Internet Explorer. If you are on Windows XP computer, your version of IE will not display this page properly. Please install Chrome or Firefox - latest versions of these browsers still have full support for Win XP (SP2 minimum).</p>
+-->
+          </div>
+
+          <h2 onclick="readme('close')" id="close_readme">CLOSE</h2>
+      </div>
+  </div>
+  
+  
+  <div id="div_content">
+  
+  <div id="div_colormenu_bg" onMouseDown="CloseColorMenu('bg','bg','bg')" onMouseOver="SetColor('bg','bg')">
+  </div>
+  
+  
+  <header>
+	<svg id="a_logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px"
+         height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+        <g><path fill="#FFFFFF" d="M35.25,34.98c-2.02,1.38-4.05,2.95-6.53,4.97l6.53-9.94l3.13-4.6l3.5,5.8
+        C39.49,32.5,37.37,33.6,35.25,34.98z M0,70.97h9.94c7.73-11.78,16.02-21.17,25.31-29c2.95-2.49,5.89-4.79,9.02-6.9l3.86,6.17
+        c-4.41,3.13-8.83,7-12.88,11.23c-5.06,5.43-9.62,11.6-13.3,18.5h8.88c1.47-3.22,2.95-5.89,4.42-8.38c4.23-6.72,8.84-11.51,15-17.4
+        l4.05,6.35c-5.34,5.25-9.67,11.32-12.7,19.33h7.37c1.66-5.89,4.69-11.59,7.91-15.56L66,70.88h10.03l-13.44-22
+        c4.69-4.05,10.95-7.36,17.3-9.94c-8.38,1.84-13.62,3.96-19.05,7.37l-3.96-6.17c4.69-3.5,11.78-7.64,17.03-10.21
+        c-7.09,1.84-13.25,4.14-18.77,6.99l-4.05-6.44c5.16-2.95,10.86-6.45,17.31-9.21c-7.46,1.57-12.8,3.5-18.96,6.26L38.2,8.93L0,70.97"/></g>
+    </svg>
+
+
+    <span id="header_text">Combat T</span>
+    
+    
+    <!--<svg id="menu_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+	<rect y="60.41" fill="#FFFFFF" width="80" height="19.59"/>
+	<rect y="30.2" fill="#FFFFFF" width="80" height="19.59"/>
+	<rect fill="#FFFFFF" width="80" height="19.59"/>
+	</svg>-->
+    
+    <div id="open_readme" class="noPrint" onClick="readme('open')">
+    <div style="height:100%; display:table;"><div style="display:table-cell;vertical-align:middle;" >Read me</div></div>
+    </div>
+  </header>
+  
+  <div id="div_cbttsvg_container">
+    <object  id="svg" data="cbt_t.svg" type="image/svg+xml" onload="OnLoad()"></object>
+    <div id="colormenu" class="noPrint"></div>
+    
+    
+  </div>
+  
+  <form name="the_form" id="the_form" method="post" action="cbt_t.php" target="_blank" autocomplete="off">
+  
+  <fieldset id="order_options" class="options_block">
+  
+  <input id="version" name="version" style="display:none;" type="text" size="10" value="0.99.201:24.02.2020" />
+  
+  <h2>Order</h2> 
+  <div id="opt_order" class="option_line">
+  <label class="option_name" id="opt_name_order">Order for:</label>
+    <div class="checkbox_block">
+		<div class="value_option checkbox_wrap"><input type="radio" name="opt_order" id="wingant" value="wingant" onchange="OrderFor(id)" />&nbsp;Combat T + ANT</div>
+		<div class="value_option checkbox_wrap"><input type="radio" name="opt_order" id="wing" value="wing" onchange="OrderFor(id)" checked />&nbsp;Combat T</div>
+		<div class="value_option checkbox_wrap"><input type="radio" name="opt_order" id="wingsail" value="sail" onchange="OrderFor(id)"/>&nbsp;Combat T sail only</div>
+    </div>
+  </div> 
+  
+  </fieldset>  
+  
+  <fieldset id="sail_options" class="options_block">
+  <h2>Sail Options</h2> 
+  
+  <div id="opt_leading_edge" class="option_line">
+  <label for="leading_edge" class="option_name" id ="opt_name_leading_edge">Leading Edge</label>
+    <select class="value_option" id="leading_edge" name="leading_edge" onchange="SetColor(id, value)">
+<!--      <option value="PX10T">White - DP PX10T</option>-->
+<!--      <option value="PX10TUVP">White - DP PX10T UVP</option>-->
+<!--      <option value="PE10CLEAR" selected>Clear - DP PE</option>-->
+<!--      <option value="PE10OPTIC">Optic - DP PE</option>-->
+      <option value="PE10BLACK">DP PE Black</option>
+      <option value="NCVGRILL180">NCV Clear</option>
+      <option value="NCVGRILL180WHITE" selected>NCV White</option>
+    </select>
+  </div> 
+  
+  <div id="opt_top_surface" class="option_line">
+  <label for="top_surface" class="option_name" id ="opt_name_top_surface">Top Surface</label>
+    <select class="value_option" id="top_surface" name="top_surface" onchange="SetColor(id, value)">
+<!--      <option value="PE10CLEAR" >Clear - DP PE</option>-->
+<!--      <option value="PE10OPTIC">Optic - DP PE</option>-->
+      <option value="PE10BLACK">DP PE Black</option>
+      <option value="NCVGRILL180" selected>NCV Clear</option>
+    </select>
+  </div>
+  
+  <div id="opt_bottom_surface" class="option_line">
+  <label for="bottom_surface" class="option_name" id ="opt_name_bottom_surface">Bottom Surface</label>
+    <select class="value_option" id="bottom_surface" name="bottom_surface" onchange="SetColor(id, value)">
+      <option value="DP170MT0000">White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100">Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105" selected>Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352">Dk. Blue - DP 170CMT (7352)</option>
+    </select>
+  </div> 
+  
+  <div id="opt_middle_line" class="option_line">
+  <label for="middle_line" class="option_name" id ="opt_name_middle_line">Middle Line</label>
+    <select class="value_option" id="middle_line" name="middle_line" onchange="SetColor(id, value)">
+      <option value="DP170MT0000" selected>White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100">Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352">Dk. Blue - DP 170CMT (7352)</option>
+      <option value="CONTLTBLUE">Lt. Blue - Contender Supercruise</option>
+      <option value="CONTMEDBLUE">Med. Blue - Contender Supercruise</option>
+      <option value="CONTTURQ">Turquoise - Contender Supercruise</option>
+    </select>
+  </div> 
+  
+  <div id="opt_rear_line" class="option_line">
+  <label for="rear_line" class="option_name" id ="opt_name_rear_line">Rear Line</label>
+    <select class="value_option" id="rear_line" name="rear_line" onchange="SetColor(id, value)">
+      <option value="DP170MT0000">White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100" selected>Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352">Dk. Blue - DP 170CMT (7352)</option>
+      <option value="CONTLTBLUE">Lt. Blue - Contender Supercruise</option>
+      <option value="CONTMEDBLUE">Med. Blue - Contender Supercruise</option>
+      <option value="CONTTURQ">Turquoise - Contender Supercruise</option>
+    </select>
+  </div> 
+  
+  <div id="opt_battens" class="option_line">
+  <label for="battens" class="option_name">Battens</label>
+    <select class="value_option" id="battens" name="battens" onchange="SetColor(id, value)">
+      <option value="DP170MT0000" selected>White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100">Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352">Dk. Blue - DP 170CMT (7352)</option>
+    </select>
+  </div> 
+  
+  <div id="opt_ribs" class="option_line">
+  <label for="ribs" class="option_name">Ribs</label>
+    <select class="value_option" id="ribs" name="ribs" onchange="SetColor(id, value)">
+      <option value="DP170MT0000" selected>White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100">Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352">Dk. Blue - DP 170CMT (7352)</option>
+    </select>
+  </div> 
+  
+  </fieldset>
+  
+  <fieldset id="other_options" class="options_block">
+  <h2>Other Options</h2> 
+  
+  <div id="opt_winglets" class="option_line">
+  <label for="winglets" class="option_name" id ="opt_name_winglets">Winglets</label>
+    <select class="value_option" id="winglets" name="winglets" onchange="SetColor(id, value)">
+      <option value="WINGLETSWHITE" selected>White</option>
+      <option value="WINGLETSBLACK">Black</option>
+      <option value="WINGLETSCARBON">Carbon optic*</option>
+    </select>
+  </div> 
+  
+  <div id="opt_letters" class="option_line">
+  <label for="letters" class="option_name" id ="opt_name_letters">Letters</label>
+    <select class="value_option" id="letters" name="letters" onchange="SetColor(id, value)">
+	  	  <option value="no_letters">No Letters</option>
+		  <option value="INSIGWHITE">White - Insignia PSA</option>
+		  <option value="INSIGBLACK" selected>Black - Insignia PSA</option>
+		  <option value="INSIGRED">Red - Insignia PSA</option>
+		  <option value="INSIGDKBLUE">Dk. Blue - Insignia PSA</option>
+          <option value="INSIGFLORANGE">Fluoro Orange - Insignia PSA</option>
+          <option value="INSIGFLGREEN">Fluoro Green - Insignia PSA</option>
+    </select>
+    <div id="wrap_lett_tbl" class="v_transition_show">
+    <table id="lett_tbl" class="checkbox_table">
+      <tr>
+        <td><input type="radio" name="l_wing" id="let_rw" onchange="ChangeLetters(id)" value="rw" checked />&nbsp;On right wing</td>
+        <td><input type="radio" name="l_wing" id="let_bw" onchange="ChangeLetters(id)" value="bw" />&nbsp;On both wings</td>
+      </tr><tr>
+        <td><input type="radio" name="l_font" id="let_lat" onchange="ChangeLetters(id)" value="lat" checked />&nbsp;Latin</td>
+        <td><input type="radio" name="l_font" id="let_cyr" onchange="ChangeLetters(id)" value="cyr" />&nbsp;Cyrillic</td>
+      </tr><tr>
+        <td><input type="radio" name="l_size" id="let_big" onchange="ChangeLetters(id)" value="big" />&nbsp;Big</td>
+        <td><input type="radio" name="l_size" id="let_small" onchange="ChangeLetters(id)" value="small" checked />&nbsp;Small</td>
+      </tr><tr>
+        <td><input type="radio" name="l_type" id="let_sol" onchange="ChangeLetters(id)" value="sol" checked />&nbsp;Solid</td>
+        <td><input type="radio" name="l_type" id="let_out" onchange="ChangeLetters(id)" value="out" />&nbsp;Outline</td>
+      </tr>
+    </table>
+    </div>
+  </div> 
+  
+  
+  </fieldset>
+  
+  <fieldset id="trike_options" class="options_block">
+  <h2>Trike</h2> 
+  
+  <div id="opt_trike_frame" class="option_line">
+  <label for="trike_frame" class="option_name" id ="opt_name_trike_frame">Trike Color</label>
+    <select class="value_option" id="trike_frame" name="trike_frame" onchange="SetColor(id, value)">
+      <option value="TRIKEWHITE">White</option>
+      <option value="TRIKEBLACK">Black</option>
+      <option value="TRIKEGREY">Grey</option>
+      <option value="TRIKERED" selected>Red</option>
+      <option value="TRIKEYELLOW">Yellow</option>
+      <option value="TRIKEBLUE">Blue</option>
+      <option value="TRIKEOTHER">Another - please specify in notes</option>
+    </select> <!--<span id="ref_trike_color" style="font-family: arial; font-size: 12px;">- for reference only.</span>-->
+  </div> 
+      
+  <div id="opt_trike_seat_mat" class="option_line">
+  <label for="trike_seat_mat" class="option_name" id ="opt_name_trike_seat_mat">Seat Material</label>
+    <select class="value_option" id="trike_seat_mat" name="trike_seat_mat">
+      <option value="CLOTH" selected>Cloth</option>
+      <option value="FAUXLEATHER">Faux Leather</option>
+    </select> 
+  </div>
+  
+  <div id="opt_trike_seat_in" class="option_line">
+  <label for="trike_seat_in" class="option_name" id ="opt_name_trike_seat_in">Inner Seat Color</label>
+    <select class="value_option" id="trike_seat_in" name="trike_seat_in" onchange="SetColor(id, value)">
+      <option value="TRIKESEATBLACK" selected>Black</option>
+      <option value="TRIKESEATGREY">Grey</option>
+      <option value="TRIKESEATRED">Red</option>
+      <option value="TRIKESEATYELLOW">Yellow</option>
+      <option value="TRIKESEATBLUE">Blue</option>
+      <option value="TRIKESEATOTHER">Another - please specify in notes</option>
+    </select> 
+  </div> 
+  
+  <div id="opt_trike_seat_out" class="option_line">
+  <label for="trike_seat_out" class="option_name" id ="opt_name_trike_seat_out">Outer Seat Color</label>
+<!--    <div class="value_option" id="trike_seat_out">Black</div>-->
+    <select class="value_option" id="trike_seat_out" name="trike_seat_out" onchange="SetColor(id, value)">
+      <option value="TRIKESEATBLACK" selected>Black</option>
+      <option value="TRIKESEATGREY">Grey</option>
+      <option value="TRIKESEATRED">Red</option>
+      <option value="TRIKESEATYELLOW">Yellow</option>
+      <option value="TRIKESEATBLUE">Blue</option>
+      <option value="TRIKESEATOTHER">Another - please specify in notes</option>
+    </select>
+  </div>
+  
+  <div id="hidden_trike_options" class="v_transition_hide"> <!--style="display: none;"> -->
+  
+  <div id="opt_engine" class="option_line">
+  <label for="engine" class="option_name" id ="opt_name_engine">Engine</label>
+    <select class="value_option" id="engine" name="engine" onchange="EngineTacho(id, value)">
+      <option value="M25Y" selected>Cors-Air Black Devil</option>
+      <option value="CABB">Cors-Air Black Bull</option>
+      <option value="Thor_250">Polini Thor 250</option>
+      <option value="Thor_250DS">Polini Thor 250, Dual Spark</option>
+    </select> 
+  </div>
+  <div id="opt_engine_notify" class="option_line notify v_transition_hide">
+      <div style="margin: 2px 4px 2px 4px;">Tachometer with CHT is required for selected engine!</div>
+  </div>
+  
+  <div id="opt_tacho" class="option_line">
+  <label for="tacho" class="option_name" id ="opt_name_tacho">Tachometer</label>
+    <select class="value_option" id="tacho" name="tacho" onchange="EngineTacho(id, value)">
+      <option value="none" >none</option>
+      <option value="TT" selected><!--Tacho + Hourmeter-->Tacho with Hourmeter</option>
+      <option value="CHT"><!--Tacho + Hourmeter + CHT-->Tacho with Hourmeter and CHT</option> <!-- disabled -->
+    </select> 
+  </div>
+      
+<div id="opt_prop" class="option_line">
+  <label for="prop" class="option_name" id ="opt_name_prop">Propeller</label>
+    <select class="value_option" id="prop" name="prop">
+      <option value="2bd13m" selected>2-blade, d=1,3m</option>
+      <option value="2bd14m" disabled>2-blade, d=1,4m</option>
+      <option value="3bd14m" disabled>3-blade, d=1,4m</option>
+    </select> 
+  </div>
+      
+  <div id="opt_wheels" class="option_line">
+  <label for="wheels" class="option_name" id ="opt_name_wheels">Wheels</label>
+    <select class="value_option" id="wheels" name="wheels">
+      <option value="260x85" selected>260 x 85 mm</option>
+      <option value="300x100">300 x 100 mm</option>
+    </select> 
+  </div>
+  
+<!--  <div id="opt_trike_type" class="option_line">
+  <label for="type_compact" class="option_name" id ="opt_name_trike_type">Trike type</label>
+    <table id="trike_type_tbl" class="checkbox_table"><tr>
+      <td><input type="radio" name="trike_type" id="type_compact" onchange="TrikeType()" checked />&nbsp;Compact</td>
+      <td><input type="radio" name="trike_type" id="type_simple" onchange="TrikeType()" />&nbsp;Simple</td>
+    </tr></table>
+  </div> --> 
+  
+  <div id="opt_other_trike_opts" class="option_line">
+  <label class="option_name" id ="opt_name_other_trike_opts">Other options</label>
+    <table id="trike_opts_tbl" class="checkbox_table"><tr>  <!--value="something"-->
+      <td>Big Foot kit (wheels 490 x 230 mm)</td>
+      <td><input type="checkbox" name="trike_big_foot" id="trike_big_foot"  /></td></tr><tr>
+      <td>Telescope front pole</td>
+      <td><input type="checkbox" name="trike_telescopeFPole" id="trike_telescopeFPole"  /></td></tr><tr>
+      <td>Landing light</td>
+      <td><input type="checkbox" name="trike_llight" id="trike_llight"  /></td></tr><tr>
+      <td>Strobe lights</td>
+      <td><input type="checkbox" name="trike_strobe" id="trike_strobe"  /></td></tr><tr>
+      <td>Hand trottle</td>
+      <td><input type="checkbox" name="trike_handtrott" id="trike_handtrott"  checked /></td></tr><tr>
+      <td>Rescue system</td>
+      <td><input type="checkbox" name="trike_rescs" id="trike_rescs"  checked /></td></tr><tr>
+      <td>Disc brake for front wheel</td>
+      <td><input type="checkbox" name="trike_brake" id="trike_brake"  checked /></td></tr><tr>
+      <td>Front wheel fairing</td>
+      <td><input type="checkbox" name="trike_nosewf" id="trike_nosewf"  checked disabled /></td></tr><tr>
+      <td>Splashers for main wheels</td>
+      <td><input type="checkbox" name="trike_splashers" id="trike_splashers"  checked /></td></tr><tr>
+      <td>Two saddle bags</td>
+      <td><input type="checkbox" name="trike_saddbag" id="trike_saddbag"  checked disabled /></td></tr><tr>
+      <td>Trike body cover</td>
+      <td><input type="checkbox" name="trike_cover" id="trike_cover"  /></td></tr><tr>
+      <td>Frame transportation bag</td>
+      <td><input type="checkbox" name="trike_fbag" id="trike_fbag"  checked /></td></tr><tr>
+      <td>Engine transportation bag</td>
+      <td><input type="checkbox" name="trike_ebag" id="trike_ebag"  checked /></td></tr><tr>
+      <td>Pylon fairing</td>
+      <td><input type="checkbox" name="trike_pylonf" id="trike_pylonf"  /></td></tr><tr>
+      <td>Quick-foldable rear landing gear</td>
+      <td><input type="checkbox" name="trike_qfoldgear" id="trike_qfoldgear"  checked disabled /></td></tr>
+    </table>
+  </div>
+  
+  </div> <!-- hide trike options -->
+  
+   
+  </fieldset>
+  
+  <fieldset id="info" class="options_block" > <!--style="height: 100%"-->
+  <h2>Info</h2> 
+  
+  <div id="opt_date" class="option_line">
+  	<label for="date" class="option_name">Date</label>
+  	<input id="date" name="date" type="text" size="10" value="08.02.2015" ondblclick="SetDate(id)"/>
+  </div>
+  
+  <div id="opt_cust_ref" class="option_line">
+  	<label for="cust_ref" class="option_name">Reference</label>
+  	<input id="cust_ref" name="cust_ref" type="text" size="34" maxlength="12" placeholder="Your order reference"/>
+  </div>
+  
+  <div id="opt_dealer" class="option_line">
+  	<label for="dealer" class="option_name">Dealer</label>
+  	<input id="dealer" name="dealer" type="text" size="34" maxlength="34" placeholder="Dealer's name"/>
+  </div>
+  
+  <div id="opt_customer" class="option_line">
+  	<label for="customer" class="option_name">Customer</label>
+  	<input id="customer" name="customer" type="text" size="34" maxlength="34" placeholder="Customer's name"/>
+  </div>
+  
+  <div id="hidden_old_wing_data" class="v_transition_hide">
+      <div id="opt_old_wing_sail" class="option_line">
+        <label for="old_wing_sail" class="option_name">Your Sail No.</label>
+        <input id="old_wing_sail" name="old_wing_sail" type="text" size="34" maxlength="34" placeholder="Serial No. of sail to be replaced" disabled/>
+      </div>
+
+      <div id="opt_old_wing_frame" class="option_line">
+        <label for="old_wing_frame" class="option_name">Your Frame No.</label>
+        <input id="old_wing_frame" name="old_wing_frame" type="text" size="34" maxlength="34" placeholder="Serial No. of your wing frame" disabled/>
+      </div>
+  </div>
+    
+  <div id="opt_notes" class="option_line">
+  	<label for="notes" class="option_name">Notes</label>
+    <div id="fix" style="margin-left: 4px; margin-right: 4px;">
+  	<textarea id="notes" name="notes" rows="4" oninput="NotesLimiter(id)" style="width: 100%; resize: vertical; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;" placeholder="Leave your comments here"></textarea>
+    
+    <div id="opt_notes_count">
+  	<span id="char_left"></span> characters left 
+    </div>
+  
+    </div>
+  </div>
+  
+  </fieldset>
+  
+  
+
+  <!-- Download button -->
+  <div id="download_button" class="noPrint" onclick="document.the_form.submit()">
+	<div style="display:table; padding:0px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom: 0px;">
+		<div style="display:table-cell; margin: 0px; padding: 0px; vertical-align: middle;">
+			<svg version="1.1" id="download_arrow_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+				<polygon fill="#FFFFFF" points="20,36.06 39,20.06 28,20.06 28,3.94 12,3.94 12,20.06 1,20.06 "/>
+			</svg>
+		</div>
+		<div style="display:table-cell; margin: 0px; padding: 0px; vertical-align: middle;">
+			<p id="download_text">DOWNLOAD PDF</p>
+		</div>
+	</div>
+  </div>
+  <!-- end of Download button -->  
+  
+ 
+  </form>
+  
+  
+  
+  
+  </body>
+</html>

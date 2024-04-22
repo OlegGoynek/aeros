@@ -1,0 +1,301 @@
+<!-- Created by Viktor Moroz. Last edited: 2013.04.12 -->
+<html>
+  <head>
+    <script type="text/javascript" src="dsc_c.js"></script>
+    <style type="text/css">
+      table
+      {
+        font-family: arial;
+        font-size: 10pt;
+        font-weight: normal;
+        font-style: normal;
+        color: black;
+        background-color: azure;
+      }
+      .model
+      {
+        font-family: Arial;
+        font-size: 26;
+        font-weight: bold;
+        font-style: italic;
+        color: aqua;
+      }
+	  .legend {
+		max-width: 595px;
+		font-family: courier;
+		font-size: 10pt;	
+		white-space: nowrap;
+	  }
+	  div.legend {
+		white-space: normal;
+	  }
+    </style>
+  </head>
+  <body>
+    <table border="0" cellspacing="0">
+      <tr>
+        <td bgcolor="#00bfff" valign="center" align="left">
+          <div class="model">&nbsp;&nbsp;&nbsp;Discus C</div>
+        </td>
+        <td bgcolor="#00bfff" valign="center" align="right">
+          <div class="model">AEROS&nbsp;&nbsp;&nbsp;</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="596" valign="top" align="left">
+            <object width="596" height="400" id="svg" data="dsc_c.svg" type="image/svg+xml" onload="OnLoad(id)"></object>
+            <div class="legend">
+              <span class="legend"><b>*</b>Please keep in mind: colors do not exactly match the colors of materials! &nbsp;</span><br/>
+              <span class="legend"><b>LE</b> - Leading Edge &nbsp;</span>
+              <span class="legend"><b>TS</b> - Top Surface &nbsp;</span>
+              <span class="legend"><b>TE</b> - Trailing Edge &nbsp;</span>
+              <span class="legend"><b>BS</b> - Bottom Surface &nbsp;</span>
+              <span class="legend"><b>ML</b> - Middle Line &nbsp;</span>
+              <span class="legend"><b>Bt</b> - Battens &nbsp;</span>
+              <span class="legend"><b>Rb</b> - Ribs &nbsp;</span>
+            </div>
+            
+        </td>
+        <td width="280" valign="top" align="left">
+          <table border="1" width="100%">
+            <tr>
+              <td colspan="2"><b>&nbsp;&nbsp;SAIL OPTIONS</b></td>
+            </tr>
+            <tr id="tbl_leading_edge">
+              <td id="td_leading_edge" width="30" align="center">&nbsp;LE&nbsp;</td>
+              <td>
+                <select id="leading_edge" onclick="SetColor(id, value)">
+                  <option value="#ffffff">White - DP PX10T</option>
+                  <option value="#ffffff">Clear - DP PE</option>
+                  <option value="#dddddd" selected>OPTIC - DP PE</option>
+                  <option value="#a9a9a9">DP ODL06 "smoke"</option>
+                  <option value="#ffffff">DP ODL06 UV white</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="tbl_top_surface">
+              <td id="td_top_surface" align="center">&nbsp;TS&nbsp;</td>
+              <td>
+                <select id="top_surface" onclick="SetColor(id, value)">
+                  <option value="#ffffff">Clear - DP PE</option>
+                  <option value="#dddddd" selected>OPTIC - DP PE</option>
+                  <option value="#a9a9a9">DP ODL06 "smoke"</option>
+                  <option value="#ffffff">DP ODL06 UV white</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="tbl_trailing_edge">
+              <td id="td_trailing_edge" align="center">&nbsp;TE&nbsp;</td>
+              <td>
+                <select id="trailing_edge" onclick="SetColor(id, value)">
+                  <option value="#ffffff">Clear - DP PE</option>
+                  <option value="#dddddd" selected>OPTIC - DP PE</option>
+                  <option value="#a9a9a9">DP ODL06 "smoke"</option>
+                  <option value="#ffffff">DP ODL06 UV white</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="tbl_bottom_surface">
+              <td id="td_bottom_surface" align="center">&nbsp;BS&nbsp;</td>
+              <td>
+                <select id="bottom_surface" onclick="SetColor(id, value)">
+                  <option value="#ffffff">White - DP 170CMT (0000)</option>
+                  <option value="#000000">Black - DP 170CMT (2100)</option>
+                  <option value="#c0c0c0">Grey - DP 170CMT (2328)</option>
+                  <option value="#dc143c">Red - DP 170CMT (3125)</option>
+                  <option value="#ff0040">Lt. Red - DP 170CMT (3105)</option>
+                  <option value="#ff4500">Orange - DP 170CMT (4197)</option>
+                  <option value="#ffff00" selected>Yellow - DP 170CMT (5076)</option>
+                  <option value="#c8fe2e">Lt. Yellow - DP 170CMT (5280)</option>
+                  <option value="#00bf00">Green - 6047 DP 170CMT</option>
+                  <option value="#7fff00">Lt. Green - DP 170CMT (6094)</option>
+                  <option value="#0000cd">Dk. Blue - DP 170CMT (7352)</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="tbl_middle_line">
+              <td id="td_middle_line" align="center">&nbsp;ML&nbsp;</td>
+              <td>
+                <select id="middle_line" onclick="SetColor(id, value)">
+                  <option value="#ffffff">White - DP 170CMT (0000)</option>
+                  <option value="#000000">Black - DP 170CMT (2100)</option>
+                  <option value="#c0c0c0">Grey - DP 170CMT (2328)</option>
+                  <option value="#dc143c">Red - DP 170CMT (3125)</option>
+                  <option value="#ff0040">Lt. Red - DP 170CMT (3105)</option>
+                  <option value="#ff4500">Orange - DP 170CMT (4197)</option>
+                  <option value="#ffff00">Yellow - DP 170CMT (5076)</option>
+                  <option value="#c8fe2e">Lt. Yellow - DP 170CMT (5280)</option>
+                  <option value="#00bf00">Green - 6047 DP 170CMT</option>
+                  <option value="#7fff00">Lt. Green - DP 170CMT (6094)</option>
+                  <option value="#0000cd">Dk. Blue - DP 170CMT (7352)</option>
+                  <option value="#add8e6" selected>Lt. Blue - Contender Supercruise</option>
+                  <option value="#1e90ff">Med. Blue - Contender Supercruise</option>
+                  <option value="#40e0d0">Turquoise - Contender Supercruise</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="tbl_battens">
+              <td id="td_battens" align="center">&nbsp;Bt&nbsp;</td>
+              <td>
+                <select id="battens" >
+                    <option value="#ffffff" selected>White - DP 170CMT (0000)</option>
+                    <option value="#000000" >Black - DP 170CMT (2100)</option>
+                    <option value="#c0c0c0">Grey - DP 170CMT (2328)</option>
+                    <option value="#dc143c">Red - DP 170CMT (3125)</option>
+                    <option value="#ff0040">Lt. Red - DP 170CMT (3105)</option>
+                    <option value="#ff4500">Orange - DP 170CMT (4197)</option>
+                    <option value="#ffff00">Yellow - DP 170CMT (5076)</option>
+                    <option value="#c8fe2e">Lt. Yellow - DP 170CMT (5280)</option>
+                    <option value="#00bf00">Green - DP 170CMT (6047)</option>
+                    <option value="#7fff00">Lt. Green - DP 170CMT (6094)</option>
+                    <option value="#0000cd">Dk. Blue - DP 170CMT (7352)</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="tbl_ribs">
+              <td id="td_ribs" align="center">&nbsp;Rb&nbsp;</td>
+              <td>
+                <select id="ribs" >
+                    <option value="#ffffff" selected>White - DP 170CMT (0000)</option>
+                    <option value="#000000" >Black - DP 170CMT (2100)</option>
+                    <option value="#c0c0c0">Grey - DP 170CMT (2328)</option>
+                    <option value="#dc143c">Red - DP 170CMT (3125)</option>
+                    <option value="#ff0040">Lt. Red - DP 170CMT (3105)</option>
+                    <option value="#ff4500">Orange - DP 170CMT (4197)</option>
+                    <option value="#ffff00">Yellow - DP 170CMT (5076)</option>
+                    <option value="#c8fe2e">Lt. Yellow - DP 170CMT (5280)</option>
+                    <option value="#00bf00">Green - DP 170CMT (6047)</option>
+                    <option value="#7fff00">Lt. Green - DP 170CMT (6094)</option>
+                    <option value="#0000cd">Dk. Blue - DP 170CMT (7352)</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><b>&nbsp;&nbsp;LETTERS</b></td>
+            </tr>
+            <tr id="tbl_letters">
+              <td rowspan="2" id="td_letters" valign="center" align="center">&nbsp;L&nbsp;</td>
+              <td>
+                <select id="letters" onclick="SetColor(id, value)">
+                  <option value="no_letters">No Letters</option>
+                  <option value="#dc143c" selected>Red - Insignia PSA</option>
+                  <option value="#000000">Black - Insignia PSA</option>
+                  <option value="#0000cd">Dk. Blue - Insignia PSA</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" id="let_out" onclick="OutlineFont(id)">&nbsp;Outline
+              </td>
+            </tr>
+          </table>
+          <table border="1" width="100%">
+            <tr>
+              <td colspan="3"><b>&nbsp;&nbsp;MAIN PARTS & OPTIONS</b></td>
+            </tr>
+            <tr id="tbl_wing_size">
+              <td width="80" align="right">&nbsp;Wing Size&nbsp;</td>
+              <td>
+                <select id="wing_size">
+                  <option value="13">13 (28.3 kg)</option>
+                  <option value="14" selected>14 (31.0 kg)</option>
+                  <option value="15">15 (33.0 kg)</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="tbl_wind_model">
+              <td align="right">&nbsp;Wing Model&nbsp;</td>
+              <td>
+                <select id="wing_model">
+                  <option value="std"selected>C - Standard</option>
+                  <option value="std_b">CB - Shortpack(2m)</option>
+                  <option value="mosq">CM - Mosquito</option>
+                  <option value="mosq_b">CBM - Mosquito shortpack</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="tbl_battens">
+              <td  id="td_battens" align="right">&nbsp;Battens&nbsp;</td>
+              <td>
+                <select id="battens">
+                  <option value="std" selected>aluminium *</option>
+                  <option value="mosq">carbon, d=8.0 mm</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="tbl_wires">
+              <td  id="td_wires" align="right">&nbsp;Wires&nbsp;</td>
+              <td>
+                <select id="frw">
+                  <option value="frw_pvc" selected>PVC covered, d=2.5 mm *</option>
+                  <option value="frw_2">not covered, d=2.0 mm</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="tbl_speedbar_type">
+              <td align="right">&nbsp;Speedbar&nbsp;</td>
+              <td>&nbsp;aluminium profile</td>
+            </tr>
+            <tr id="tbl_uprights">
+              <td align="right">&nbsp;Uprights&nbsp;</td>
+              <td>&nbsp;silver (Litestream)</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table border="1"  width="100%">
+            <tr>
+              <td colspan="3">
+                <table border="0" >
+                  <tr>
+                    <td width="120"><b>&nbsp;SPARE PARTS:&nbsp;</b></td>
+                    <td>
+                      <b>&nbsp;Uprights:&nbsp;</b><input type="text" size="3" id="upr_qty" value="">&nbsp;pcs.
+                    </td>
+                    <td>
+                      <b>&nbsp;Tip wands:&nbsp;</b><input type="text" size="3" id="tip_qty" value="">&nbsp;pcs.
+                    </td>
+                    <td>
+                      <b>&nbsp;&nbsp;LE #3 tube:&nbsp;</b>
+                      <input type="checkbox" id="le_l">&nbsp;Left
+                      <input type="checkbox" id="le_r">&nbsp;Right
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>&nbsp;Date:</b><br>
+                <input id="date" type="text" size="10" value="21.03.2012" ondblclick="SetDate(id)">
+              </td>
+              <td>
+                <b>&nbsp;Dealer:</b><br>
+                <input id="dealer" type="text" size="60" value="">
+              </td>
+              <td>
+                <b>&nbsp;Customer:</b><br>
+                <input id="customer" type="text" size="60" value="">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <b>&nbsp;Notes:</b><br>
+                <textarea id="notes" rows="3" cols="58"></textarea>
+              </td>
+              <td>&nbsp;* - standard set (according the base price)<br>
+              <div valign="center" align="center">
+              <a href="../how_to.html" target="_blank"><h3>How to use this order form...<h3></a>
+              </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  
+</body>
+</html>

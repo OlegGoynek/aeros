@@ -1,0 +1,19 @@
+.support {
+	margin-top: 60px;
+}
+
+.support__text-block {
+	padding-left: 5vw;
+}
+
+.support__title {
+	font-size: calc(var(--sizeIndex)*4)
+}
+
+.support__title span {
+	color: var(--accent);
+}
+
+.support-menu {
+	background-color: var(--dark);
+}

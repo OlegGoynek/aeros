@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,700&family=Montserrat&display=swap');
+
+
+:root {
+	--accent: #007aff;
+	--dark: #202020;
+	--grey: #303030;
+	--sizeIndex: calc(1vh + 1vw);
+	--transition: 1.25s cubic-bezier(.2, .6, 0, 1);
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+	color: #fff;
+	background-color: var(--grey);
+	font-family: 'Montserrat', sans-serif;
+	font-size: calc(var(--sizeIndex));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	:has(:target) {
+		scroll-behavior: smooth;
+		scroll-padding-top: 5rem;
+	}
+}
+
+section {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	font-family: 'Genos', sans-serif;
+}
+
+ul,
+li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	display: block;
+	width: fit-content;
+	text-decoration: none;
+	color: #fff;
+	transition: color var(--transition);
+}
+
+a:hover {
+	color: var(--accent);
+}
+
+button {
+	width: fit-content;
+	height: fit-content;
+	background: none;
+	border: 0;
+	color: #fff;
+	transition: color var(--transition);
+}
+
+button:hover {
+	color: var(--accent);
+}
+
+p {
+	margin-top: 1rem;
+}
+
+.accent {
+	color: var(--accent);
+}
+
+.btn {
+	display: block;
+	width: max-content;
+	border: #fff 1px solid;
+	border-radius: 8px;
+	padding: 5px 15px;
+	text-align: center;
+	font-weight: 900;
+	transition: color var(--transition), border var(--transition);
+}
+
+.btn:hover {
+	border: var(--accent) 1px solid;
+}

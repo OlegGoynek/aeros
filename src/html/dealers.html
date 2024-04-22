@@ -1,0 +1,82 @@
+@@include("blocks/doctype.html")
+
+	<title>Aeros | Dealers</title>
+	<meta name="description" content="Aeros have a world-wide network of dealers">
+	<meta name="keywords" content="hang glider, trikes, kit, aeros, office, dealers, distributors, kites, salers, country, contact, service, support">
+	<!-- OG Tags -->
+	<meta property="og:site-name" content="Aeros">
+	<meta property="og:title" content="Aeros Dealers">
+	<meta property="og:description" content="Aeros have a world-wide network of dealers">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://aeros.com.ua/contact_us">
+	<meta property="og:image" content="https://aeros.com.ua/img/preview.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+
+
+@@include("blocks/link-script.html")
+
+@@include("blocks/preloader.html")
+
+@@include("blocks/header.html")
+
+
+	<section class="dealers" id="dealers">
+		<div class="dealers__text-block">
+			<h1 class="dealers__title">Find <span>your</span> dealer</h1>
+			<p class="dealers__text">
+				For comfortable work with you, we have created a large network of dealers around the world.
+			</p>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col d-flex justify-content-center">
+					<div class="search-dealer">
+						<input type="text" id="search-dealer-input" class="search-dealer-input" placeholder="Your country...">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<?php
+		// Check for POST
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+		  
+		  $postdata = http_build_query( [
+		    'secret'   => '6LcxcpMpAAAAAPttMhrla1ZnFthcU-MdmHknEv9w',
+		    'response' => $_POST[ 'g-recaptcha-response' ]
+		  ] );
+		  
+		  $opts = [
+		    'http' => [
+		        'method'  => 'POST',
+		        'header'  => 'Content-type: application/x-www-form-urlencoded',
+		        'content' => $postdata
+		    ]
+		  ];
+		  
+		  $context  = stream_context_create( $opts );
+		  
+		  $result = file_get_contents(
+		    'https://www.google.com/recaptcha/api/siteverify', false, $context
+		  );
+		  
+		  $check = json_decode( $result );
+
+		  if( $check->success ) {
+		    // If CAPTCHA is successfully completed...
+		    include './files/contacts/dealer_list.php';
+		  } else {
+		    // What happens when the CAPTCHA wasn't checked
+				echo "<script>window.top.location = 'https://aeros.com.ua/contact_us';</script>";
+		  }
+		
+		} else { 
+		    echo "<script>window.top.location = 'https://aeros.com.ua/contact_us';</script>";
+		  exit;
+		} 
+	?>
+
+
+@@include("blocks/footer.html")

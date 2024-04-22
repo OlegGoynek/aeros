@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<materials>
+	
+	<!-- MT170 WHITE -->
+	<material> 
+		<id>DP170MT0000</id>
+        <group>DPCMT</group>
+		<namefull>White - Dimension-Polyant Color MT 170 - #0000</namefull>
+		<nameshort>White - DP 170 C MT (0000)</nameshort>
+        <namelegend>CMT #0000</namelegend>
+		<webcolor>#ffffff</webcolor>
+		<webopac>0.93</webopac>
+	</material>
+	
+	<!-- MT170 BLACK -->
+	<material>
+		<id>DP170MT2100</id>
+        <group>DPCMT</group>
+		<namefull>Black - Dimension-Polyant Color MT 170 - #2100</namefull>
+		<nameshort>Black - DP 170 C MT (2100)</nameshort>
+        <namelegend>CMT #2100</namelegend>
+		<webcolor>#000000</webcolor>
+		<webopac>0.98</webopac>
+	</material>
+	
+	<!-- MT170 GREY -->
+	<material> 
+		<id>DP170MT2328</id>
+        <group>DPCMT</group>
+		<namefull>Grey - Dimension-Polyant Color MT 170 - #2328</namefull>
+		<nameshort>Grey - DP 170 C MT (2328)</nameshort>
+        <namelegend>CMT #2328</namelegend>
+		<webcolor>#c0c0c0</webcolor>
+		<webopac>0.96</webopac>
+	</material>
+	
+	<!-- MT170 RED -->
+	<material> 
+		<id>DP170MT3125</id>
+        <group>DPCMT</group>
+		<namefull>Red - Dimension-Polyant Color MT 170 - #3125</namefull>
+		<nameshort>Red - DP 170 C MT (3125)</nameshort>
+        <namelegend>CMT #3125</namelegend>
+		<webcolor>#dc143c</webcolor>
+		<webopac>0.97</webopac>
+	</material>
+	
+	<!-- MT170 LT. RED -->
+	<material> 
+		<id>DP170MT3105</id>
+        <group>DPCMT</group>
+		<namefull>Lt. Red - Dimension-Polyant Color MT 170 - #3105</namefull>
+		<nameshort>Lt. Red - DP 170 C MT (3105)</nameshort>
+        <namelegend>CMT #3105</namelegend>
+		<webcolor>#ff0033</webcolor>
+		<webopac>0.96</webopac>
+	</material>
+	
+	<!-- MT170 ORANGE -->
+	<material> 
+		<id>DP170MT4197</id>
+        <group>DPCMT</group>
+		<namefull>Orange - Dimension-Polyant Color MT 170 - #4197</namefull>
+		<nameshort>Orange - DP 170 C MT (4197)</nameshort>
+        <namelegend>CMT #4197</namelegend>
+		<webcolor>#ff4500</webcolor>
+		<webopac>0.96</webopac>
+	</material>
+	
+	<!-- MT170 YELLOW -->
+	<material> 
+		<id>DP170MT5076</id>
+        <group>DPCMT</group>
+		<namefull>Yellow - Dimension-Polyant Color MT 170 - #5076</namefull>
+		<nameshort>Yellow - DP 170 C MT (5076)</nameshort>
+        <namelegend>CMT #5076</namelegend>
+		<webcolor>#ffff00</webcolor>
+		<webopac>0.95</webopac>
+	</material>
+	
+	<!-- MT170 LT. YELLOW -->
+	<material> 
+		<id>DP170MT5280</id>
+        <group>DPCMT</group>
+		<namefull>Lt. Yellow - Dimension-Polyant Color MT 170 - #5280</namefull>
+		<nameshort>Lt. Yellow - DP 170 C MT (5280)</nameshort>
+        <namelegend>CMT #5280</namelegend>
+		<webcolor>#c8fe2e</webcolor>
+		<webopac>0.95</webopac>
+	</material>
+	
+	<!-- MT170 GREEN -->
+	<material> 
+		<id>DP170MT6047</id>
+        <group>DPCMT</group>
+		<namefull>Green - Dimension-Polyant Color MT 170 - #6047</namefull>
+		<nameshort>Green - DP 170 C MT (6047)</nameshort>
+        <namelegend>CMT #6047</namelegend>
+		<webcolor>#006b09</webcolor>
+		<webopac>0.98</webopac>
+	</material>
+
+	<!-- MT170 LT. GREEN -->
+	<material> 
+		<id>DP170MT6094</id>
+        <group>DPCMT</group>
+		<namefull>Lt. Green - Dimension-Polyant Color MT 170 - #6094</namefull>
+		<nameshort>Lt. Green - DP 170 C MT (6094)</nameshort>
+        <namelegend>CMT #6094</namelegend>
+		<webcolor>#7fff00</webcolor>
+		<webopac>0.95</webopac>
+	</material>
+	
+	<!-- MT170 DK. BLUE -->
+	<material> 
+		<id>DP170MT7352</id>
+        <group>DPCMT</group>
+		<namefull>Dk. Blue - Dimension-Polyant Color MT 170 - #7352</namefull>
+		<nameshort>Dk. Blue - DP 170 C MT (7352)</nameshort>
+        <namelegend>CMT #7352</namelegend>
+		<webcolor>#0000cd</webcolor>
+		<webopac>0.98</webopac>
+	</material>
+		
+	
+	
+	<!-- Contender LT. BLUE -->
+	<material> 
+		<id>CONTLTBLUE</id>
+        <group>CONTENDER</group>
+		<namefull>Lt. Blue - Contender Supercruise</namefull>
+		<nameshort>Lt. Blue - Contender</nameshort>
+        <namelegend>Lt. Blue</namelegend>
+		<webcolor>#add8e6</webcolor>
+		<webopac>0.97</webopac>
+	</material>
+		
+	<!-- Contender MED. BLUE -->
+	<material> 
+		<id>CONTMEDBLUE</id>
+        <group>CONTENDER</group>
+		<namefull>Med. Blue Contender Supercruise</namefull>
+		<nameshort>Med. Blue - Contender</nameshort>
+        <namelegend>Med. Blue</namelegend>
+		<webcolor>#1e90ff</webcolor>
+		<webopac>0.97</webopac>
+	</material>
+		
+	<!-- Contender TURQUOISE -->
+	<material> 
+		<id>CONTTURQ</id>
+        <group>CONTENDER</group>
+		<namefull>Turquoise - Contender Supercruise</namefull>
+		<nameshort>Turquoise - Contender</nameshort>
+        <namelegend>Turquoise</namelegend>
+		<webcolor>#31B772</webcolor>
+		<webopac>0.97</webopac>
+	</material>
+	
+	
+	
+	<!-- HTP 180 Square -->
+	<material> 
+		<id>DP180HTPS</id>
+        <group>DPRIPSTOP</group>
+		<namefull>White - Dimension-Polyant - HTP 180 Square</namefull>
+		<nameshort>White - DP 180 HTP Square</nameshort>
+        <namelegend>180 HTP</namelegend>
+		<webcolor>#ffffff</webcolor>
+		<webopac>0.97</webopac>
+	</material>
+	
+	
+	
+	<!-- INSIGNIA PSA -->
+	<material> 
+		<id>INSIGBLACK</id>
+        <group>DPSTICKY</group>
+		<namefull>Black - Insignia PSA</namefull>
+		<nameshort>Black</nameshort>
+		<webcolor>#000000</webcolor>
+		<webopac>0.99</webopac>
+	</material>
+	
+	<material> 
+		<id>INSIGRED</id>
+        <group>DPSTICKY</group>
+		<namefull>Red - Insignia PSA</namefull>
+		<nameshort>Red</nameshort>
+		<webcolor>#dc143c</webcolor>
+		<webopac>0.9</webopac>
+	</material>
+	
+	<material> 
+		<id>INSIGDKBLUE</id>
+        <group>DPSTICKY</group>
+		<namefull>Dk. Blue - Insignia PSA</namefull>
+		<nameshort>Dk. Blue</nameshort>
+		<webcolor>#0000cd</webcolor>
+		<webopac>0.98</webopac>
+	</material>
+    
+    <material> 
+		<id>INSIGWHITE</id>
+        <group>DPSTICKY</group>
+		<namefull>White - Insignia PSA</namefull>
+		<nameshort>White</nameshort>
+		<webcolor>#fff</webcolor>
+		<webopac>0.85</webopac>
+	</material>
+    
+    <material> 
+		<id>INSIGFLORANGE</id>
+        <group>DPSTICKY</group>
+		<namefull>Fluorescent Orange - Insignia PSA</namefull>
+		<nameshort>Fluor Orange</nameshort>
+		<webcolor>#ff4500</webcolor>
+		<webopac>0.9</webopac>
+	</material>
+    
+    <material> 
+		<id>INSIGFLGREEN</id>
+        <group>DPSTICKY</group>
+		<namefull>Fluorescent Green - Insignia PSA</namefull>
+		<nameshort>Fluor Green</nameshort>
+		<webcolor>#7fff00</webcolor>
+		<webopac>0.9</webopac>
+	</material>
+
+    
+    <!-- PX10T -->
+    <material> 
+		<id>PX10T</id>
+        <group>DPPX10T</group>
+		<namefull>White - Dimension-Polyant PX10T</namefull>
+		<nameshort>PX10T</nameshort>
+		<webcolor>#ffffff</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>PX10TUVP</id>
+        <group>DPPX10T</group>
+		<namefull>White - Dimension-Polyant PX10T UV Protected</namefull>
+		<nameshort>PX10T UVP</nameshort>
+		<webcolor>#fffffc</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    
+    <!-- PE -->
+    <material> 
+		<id>PE05CLEAR</id>
+        <group>DPPE</group>
+		<namefull>Clear - Dimension-Polyant PE05</namefull>
+		<nameshort>PE05 Clear</nameshort>
+        <namelegend>PE05 Clear</namelegend>
+		<webcolor>#ffffff</webcolor>
+		<webopac>0.84</webopac>
+	</material>
+    
+    <material> 
+		<id>PE10CLEAR</id>
+        <group>DPPE</group>
+		<namefull>Clear - Dimension-Polyant PE10</namefull>
+		<nameshort>PE10 Clear</nameshort>
+        <namelegend>PE10 Clear</namelegend>
+		<webcolor>#ffffff</webcolor>
+		<webopac>0.84</webopac>
+	</material>
+    
+    <material> 
+		<id>PE05OPTIC</id>
+        <group>DPPE</group>
+		<namefull>Optic - Dimension-Polyant PE05</namefull>
+		<nameshort>PE05 Optic</nameshort>
+        <namelegend>PE05 Optic</namelegend>
+		<webcolor>#c2c2c2</webcolor>
+		<webopac>0.84</webopac>
+	</material>
+    
+    <material> 
+		<id>PE10OPTIC</id>
+        <group>DPPE</group>
+		<namefull>Optic - Dimension-Polyant PE10</namefull>
+		<nameshort>PE10 Optic</nameshort>
+        <namelegend>PE10 Optic</namelegend>
+		<webcolor>#c2c2c2</webcolor>
+		<webopac>0.84</webopac>
+	</material>
+    
+    <material> 
+		<id>PE05BLACK</id>
+        <group>DPPE</group>
+		<namefull>Optic 3 - Dimension-Polyant PE05 Black</namefull>
+		<nameshort>PE05 Black</nameshort>
+        <namelegend>PE05 Blackc</namelegend>
+		<webcolor>#000000</webcolor>
+		<webopac>0.7</webopac>
+	</material>
+    
+    <material> 
+		<id>PE10BLACK</id>
+        <group>DPPE</group>
+		<namefull>Optic 3 - Dimension-Polyant PE10 Black</namefull>
+		<nameshort>PE10 Black</nameshort>
+        <namelegend>PE10 Black</namelegend>
+		<webcolor>#000000</webcolor>
+		<webopac>0.75</webopac>
+	</material>
+    
+    
+    <!-- ODL -->
+    <material> 
+		<id>ODL06SMOKE</id>
+        <group>DPODL</group>
+		<namefull>Smoke - Dimension-Polyant Technora ODL06</namefull>
+		<nameshort>Smoke ODL06</nameshort>
+        <namelegend>Smoke ODL06</namelegend>
+		<webcolor>#000000</webcolor>
+		<webopac>0.40</webopac>
+	</material>
+        
+    <material> 
+		<id>ODL04SMOKE</id>
+        <group>DPODL</group>
+		<namefull>Smoke - Dimension-Polyant Technora ODL04</namefull>
+		<nameshort>Smoke ODL04</nameshort>
+        <namelegend>Smoke ODL04</namelegend>
+		<webcolor>#000000</webcolor>
+		<webopac>0.40</webopac>
+	</material>
+    
+    <material> 
+		<id>ODL045SMOKE</id>
+        <group>DPODL</group>
+		<namefull>Smoke - Dimension-Polyant Technora ODL04,5</namefull>
+		<nameshort>Smoke ODL04,5</nameshort>
+        <namelegend>Smoke ODL04,5</namelegend>
+		<webcolor>#000000</webcolor>
+		<webopac>0.45</webopac>
+	</material>
+    
+    <material> 
+		<id>ODL045SMOKEUV</id>
+        <group>DPODL</group>
+		<namefull>Smoke - Dimension-Polyant Technora ODL04,5 UV Protected</namefull>
+		<nameshort>Smoke ODL04,5 UVP</nameshort>
+        <namelegend>Smoke ODL04,5UV</namelegend>
+		<webcolor>#000000</webcolor>
+		<webopac>0.45</webopac>
+	</material>
+    
+    <material> 
+		<id>ODL06WHITEUV</id>
+        <group>DPODL</group>
+		<namefull>White - Dimension-Polyant Technora ODL06 UV Protected</namefull>
+		<nameshort>White ODL06 UVP</nameshort>
+        <namelegend>White ODL06UV</namelegend>
+		<webcolor>#ffffff</webcolor>
+		<webopac>0.99</webopac>
+	</material>
+    
+    
+    <!-- Other Laminates -->
+    <material> 
+		<id>PXB05</id>
+        <group>PXB</group>
+		<namefull>Smoke - Dimension-Polyant PXB05</namefull>
+		<nameshort>Smoke PXB05</nameshort>
+        <namelegend>Smoke PXB05</namelegend>
+		<webcolor>#000000</webcolor>
+		<webopac>0.40</webopac>
+	</material>
+    
+    <material> 
+		<id>PXB10</id>
+        <group>PXB</group>
+		<namefull>Smoke - Dimension-Polyant PXB10</namefull>
+		<nameshort>Smoke PXB10</nameshort>
+        <namelegend>Smoke PXB10</namelegend>
+		<webcolor>#000000</webcolor>
+		<webopac>0.45</webopac>
+	</material>
+    
+    <material> 
+		<id>P2LB</id>
+        <group>P2LB</group>
+		<namefull>Smoke - Dimension-Polyant P2LB</namefull>
+		<nameshort>Smoke P2LB</nameshort>
+        <namelegend>Smoke P2LB</namelegend>
+		<webcolor>#000000</webcolor>
+		<webopac>0.39</webopac>
+	</material>
+    
+    
+    <!-- NCV -->
+    <material> 
+		<id>NCVGRILL180</id>
+        <group>NCV</group>
+		<namefull>Clear - NCV Grill 180</namefull>
+		<nameshort>NCV Clear</nameshort>
+		<webcolor>#ffffff</webcolor>
+		<webopac>0.85</webopac>
+	</material>
+    
+    <material> 
+		<id>NCVGRILL180WHITE</id>
+        <group>NCV</group>
+		<namefull>White - NCV Grill 180</namefull>
+		<nameshort>NCV White</nameshort>
+		<webcolor>#ffffff</webcolor>
+		<webopac>1</webopac>
+	</material>
+		
+    
+    <!-- OPTIONS COLORS -->
+    <material> 
+		<id>WINGLETSCARBON</id>
+        <group>OPTIONS</group>
+		<namefull>Carbon Optic</namefull>
+		<nameshort>Carbon Optic</nameshort>
+		<webcolor>#000000</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>WINGLETSWHITE</id>
+        <group>OPTIONS</group>
+		<namefull>White</namefull>
+		<nameshort>White</nameshort>
+		<webcolor>#ffffff</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>WINGLETSBLACK</id>
+        <group>OPTIONS</group>
+		<namefull>Black</namefull>
+		<nameshort>Black</nameshort>
+		<webcolor>#000000</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>UPRIGHTSSLIPSTRBLACK</id>
+        <group>OPTIONS</group>
+		<namefull>Black (Slipstream)</namefull>
+		<nameshort>Black</nameshort>
+		<webcolor>#000000</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>UPRIGHTSSLIPSTRSILVER</id>
+        <group>OPTIONS</group>
+		<namefull>Silver (Slipstream)</namefull>
+		<nameshort>Silver</nameshort>
+		<webcolor>#EDEDED</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>SPEEDBARCARBON</id>
+        <group>OPTIONS</group>
+		<namefull>Carbon Profile</namefull>
+		<nameshort>Carbon</nameshort>
+		<webcolor>#000000</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>SPEEDBARALUPROF</id>
+        <group>OPTIONS</group>
+		<namefull>Alu Profile</namefull>
+		<nameshort>Alu Profile</nameshort>
+		<webcolor>#EDEDED</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    
+    <!-- TRIKE COLORS -->
+    <material> 
+		<id>TRIKEWHITE</id>
+        <group>TRIKECOLORS</group>
+		<namefull>White</namefull>
+		<nameshort>White</nameshort>
+		<webcolor>#ffffff</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKEBLACK</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Black</namefull>
+		<nameshort>Black</nameshort>
+		<webcolor>#000000</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKEGREY</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Grey</namefull>
+		<nameshort>Grey</nameshort>
+		<webcolor>#c0c0c0</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKERED</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Red</namefull>
+		<nameshort>Red</nameshort>
+		<webcolor>#B62528</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKEYELLOW</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Yellow</namefull>
+		<nameshort>Yellow</nameshort>
+		<webcolor>#ffff00</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKEBLUE</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Blue</namefull>
+		<nameshort>Blue</nameshort>
+		<webcolor>#0000cd</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKEGREEN</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Green</namefull>
+		<nameshort>Green</nameshort>
+		<webcolor>#006b09</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKEOTHER</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Another, in notes</namefull>
+		<nameshort>Other</nameshort>
+		<webcolor>#ffffff</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    
+    <!-- Trike Seat Colors -->
+    <material> 
+		<id>TRIKESEATBLACK</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Black</namefull>
+		<nameshort>Black</nameshort>
+		<webcolor>#000000</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKESEATGREY</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Grey</namefull>
+		<nameshort>Grey</nameshort>
+		<webcolor>#c0c0c0</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKESEATRED</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Red</namefull>
+		<nameshort>Red</nameshort>
+		<webcolor>#B62528</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKESEATYELLOW</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Yellow</namefull>
+		<nameshort>Yellow</nameshort>
+		<webcolor>#ffff00</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKESEATBLUE</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Blue</namefull>
+		<nameshort>Blue</nameshort>
+		<webcolor>#0000cd</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+    <material> 
+		<id>TRIKESEATOTHER</id>
+        <group>TRIKECOLORS</group>
+		<namefull>Another, in notes</namefull>
+		<nameshort>Other</nameshort>
+		<webcolor>#000000</webcolor>
+		<webopac>1</webopac>
+	</material>
+    
+</materials>

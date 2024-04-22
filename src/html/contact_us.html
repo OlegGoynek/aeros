@@ -1,0 +1,63 @@
+@@include("blocks/doctype.html")
+
+	<title>Aeros | Contact us</title>
+	<meta name="description" content="Aeros have a world-wide network of dealers">
+	<meta name="keywords" content="hang glider, trikes, kit, aeros, office, dealers, distributors, kites, salers, country, contact, service, support">
+	<!-- OG Tags -->
+	<meta property="og:site-name" content="Aeros">
+	<meta property="og:title" content="Aeros Contact us">
+	<meta property="og:description" content="Aeros have a world-wide network of dealers">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://aeros.com.ua/contact_us">
+	<meta property="og:image" content="https://aeros.com.ua/img/preview.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<script src="./files/captcha/handler.js"></script>
+
+
+@@include("blocks/link-script.html")
+
+@@include("blocks/preloader.html")
+
+@@include("blocks/header.html")
+
+
+	<section class="contact-us" id="contact-us">		
+		<div class="contact-us__text-block">
+			<h1 class="contact-us__title">Contact <span>us</span></h1>
+			<p class="contact-us__text">
+				<p>
+					For comfortable work with you, we have created a large network of dealers around the world.
+				</p>
+				<p>
+					Please contact your nearest dealer or you can also contact us directly with any questions.
+				</p>
+				<p>
+					We'd love to chat with you.
+				</p>
+			</p>
+		</div>
+		<div class="captcha" id="captcha">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 d-flex justify-content-center">
+						<form id="dealers-form" action="dealers.php" method="POST">
+							<button class="g-recaptcha btn captcha-btn" data-sitekey="6LcxcpMpAAAAAJcsOuRaSoE41DZeLgCfWJfUIBII"
+								data-callback='onSubmitDealers' data-action='submit'>Find dealer</button>
+						</form>
+					</div>
+					<div class="col-6 d-flex justify-content-center">
+						<form id="contact-form" action="contact.php" method="POST">
+							<button class="g-recaptcha btn captcha-btn" data-sitekey="6LcxcpMpAAAAAJcsOuRaSoE41DZeLgCfWJfUIBII"
+								data-callback='onSubmitContact' data-action='submit'>Contact us</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+@@include("blocks/footer.html")

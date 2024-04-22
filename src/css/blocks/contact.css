@@ -1,0 +1,39 @@
+.our-contact {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 50%;
+	background: url("../img/contact/team.jpg") center center / cover;
+}
+
+.our-contact__text-block {
+	position: absolute;
+	left: 5vw;
+	top: 8vh;
+	width: 90%;
+	z-index: 10;
+}
+
+.our-contact__title {
+	font-size: calc(var(--sizeIndex)*4)
+}
+
+.our-contact__title span {
+	color: var(--accent);
+}
+
+.contact {
+	background-color: var(--grey);
+}
+
+.contact__ref {
+	display: flex;
+}
+
+.contact__ref img {
+	height: calc(var(--sizeIndex)*2);
+}
+
+.contact__ref a:not(:last-child) {
+	margin-right: calc(var(--sizeIndex));
+}

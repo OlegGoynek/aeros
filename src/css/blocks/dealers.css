@@ -1,0 +1,70 @@
+.dealers {
+	margin-top: 60px;
+}
+
+.dealers__text-block {
+	padding-left: 5vw;
+}
+
+.dealers__title {
+	font-size: calc(var(--sizeIndex)*4)
+}
+
+.dealers__title span {
+	color: var(--accent);
+}
+
+.search-dealer {
+	width: 60%;
+	margin-top: 5dvh;
+}
+
+.search-dealer-input {
+	width: 100%;
+	padding: 10px 20px;
+}
+
+.dealer__country-title {
+	margin-bottom: 0;
+}
+
+.dealer__country {
+	background-color: var(--dark);
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 20px;
+	width: 100%;
+	height: auto;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: var(--transition);
+}
+
+.dealer__country_active,
+.dealer__country:hover {
+	background-color: var(--accent);
+	color: #fff;
+}
+
+.dealer__contact {
+	padding: 0px 20px;
+	background-color: var(--grey);
+	max-height: 0;
+	transition: max-height var(--transition);
+	overflow: hidden;
+}
+
+.dealer__contact-title {
+	margin-top: 10px;
+}
+
+.dealer__contact-ref img {
+	height: calc(var(--sizeIndex)*2);
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.dealer__contact-ref:not(:last-child) {
+	margin-right: calc(var(--sizeIndex));
+}

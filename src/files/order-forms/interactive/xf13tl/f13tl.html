@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Fox 13TL order form</title>
+    <script type="text/javascript" src="f13tl.js"></script>
+    <link rel="stylesheet" type="text/css" href="f13tl.css">
+    
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/f13tl_76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/f13tl_120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/f13tl_152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/f13tl_180.png">
+  </head>
+  <body> 
+  
+  
+  <div id="div_readme_bg">
+  <div id="div_readme_frame">
+  <h2 id="read_me_header">About this order-form</h2>
+  <div id="div_readme" >
+	  <p>We hope this order form will ease the process of choosing colors and materials, so you could order exactly the glider you want.</p>
+	  <h3>Colors and shapes</h3>
+	  <p>Please keep in mind, though: colors that you see on the display do not exactly match the colors of materials! The structure of cloth is not represented at all. Transparency and colors of materials in reality also depend on lighting conditions.<br/> This order form contains the sketch, that should only give you an idea about how the whole assembly will look like.</p>
+	  <h3>Filling the form & Placing the order</h3>
+	  <p>You can choose most of colors by clicking on the wing panel. All options are also available via form menu. When you are ready, click the DOWNLOAD PDF button on the bottom of page. Generated pdf will be opened in new tab/window or you will be prompted to save/open the file.<br/>Please, check pdf carefully and send it to info@aeros.com.ua.</p>
+  </div>
+  
+  <h2 onclick="readme('close')" id="close_readme">CLOSE</h2>
+  </div>
+  </div>
+  
+  
+  <div id="div_content">
+  
+  <div id="div_colormenu_bg" onMouseDown="CloseColorMenu('bg','bg','bg')" onMouseOver="SetColor('bg','bg')">
+  </div>
+  
+  
+  <header>
+	<svg id="a_logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px"
+         height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+    <g >
+    <path fill="#FFFFFF" d="M35.25,34.98c-2.02,1.38-4.05,2.95-6.53,4.97l6.53-9.94l3.13-4.6l3.5,5.8
+    C39.49,32.5,37.37,33.6,35.25,34.98z M0,70.97h9.94c7.73-11.78,16.02-21.17,25.31-29c2.95-2.49,5.89-4.79,9.02-6.9l3.86,6.17
+    c-4.41,3.13-8.83,7-12.88,11.23c-5.06,5.43-9.62,11.6-13.3,18.5h8.88c1.47-3.22,2.95-5.89,4.42-8.38c4.23-6.72,8.84-11.51,15-17.4
+    l4.05,6.35c-5.34,5.25-9.67,11.32-12.7,19.33h7.37c1.66-5.89,4.69-11.59,7.91-15.56L66,70.88h10.03l-13.44-22
+    c4.69-4.05,10.95-7.36,17.3-9.94c-8.38,1.84-13.62,3.96-19.05,7.37l-3.96-6.17c4.69-3.5,11.78-7.64,17.03-10.21
+    c-7.09,1.84-13.25,4.14-18.77,6.99l-4.05-6.44c5.16-2.95,10.86-6.45,17.31-9.21c-7.46,1.57-12.8,3.5-18.96,6.26L38.2,8.93L0,70.97"/>
+    </g>
+    </svg>
+
+
+    <span id="header_text">Fox 13TL</span>
+    
+    
+    <!--<svg id="menu_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+	<rect y="60.41" fill="#FFFFFF" width="80" height="19.59"/>
+	<rect y="30.2" fill="#FFFFFF" width="80" height="19.59"/>
+	<rect fill="#FFFFFF" width="80" height="19.59"/>
+	</svg>-->
+    
+    <div id="open_readme" class="noPrint" onClick="readme('open')">
+    <div style="height:100%; display:table;"><div style="display:table-cell;vertical-align:middle;">Read me</div></div>
+    </div>
+  </header>
+  
+  <div id="div_svg_container">
+    <object  id="svg" data="f13tl.svg" type="image/svg+xml" onload="OnLoad()"></object>
+    <div id="colormenu" class="noPrint"></div>       
+  </div>
+  
+  <form name="the_form" id="the_form" method="post" action="f13tl.php" target="_blank" autocomplete="off"> 
+  
+  <fieldset id="order_options" class="options_block">
+  
+  <input id="version" name="version" style="display:none;" type="text" size="10" value="0.99:01.05.2017" />
+  
+  <h2>Order</h2> 
+  <div id="opt_order" class="option_line">
+  <label class="option_name" id="opt_name_order">Order for:</label>
+    <div class="checkbox_block">
+    <div class="value_option checkbox_wrap">
+      <input type="radio" name="opt_order" id="wing" value="wing" onchange="OrderFor(id)" checked />
+      <label for="wing">Complete wing</label>
+    </div>
+    <div class="value_option checkbox_wrap">
+      <input type="radio" name="opt_order" id="wingsail" value="sail" onchange="OrderFor(id)"/>
+      <label for="wingsail">Sail only</label>
+    </div>
+    </div>
+  </div>
+  
+
+<!--<div id="opt_wing_version" class="option_line">
+	<label for="wing_version" class="option_name" id ="opt_name_wing_version">Wing Version</label>
+		<div class="checkbox_block" style="clear:right">
+		 <div class="value_option checkbox_wrap">
+		  <input type="radio" name="dsc_version" id="dsc_a" value="dsc_a" onchange="WingVersion()"/>
+		  <label for="dsc_a">Discus</label>
+		</div>
+	    <div class="value_option checkbox_wrap">
+		  <input type="radio" name="dsc_version" id="dsc_c" value="dsc_c" onchange="WingVersion()" checked/>
+		  <label for="dsc_c">Discus C</label>
+		</div>		  
+	  </div>
+						
+		<div class="checkbox_block" id="wing_ver_m_b">
+		<div class="value_option checkbox_wrap">
+		  <input type="checkbox" name="mosq" id="mosq" value="mosq"/>
+		  <label for="mosq">M - mosquito version</label>
+		</div>
+		<div class="value_option checkbox_wrap">
+		  <input type="checkbox" name="shortpack" id="shortpack" value="shortpack"/>
+		  <label for="shortpack">B - shortpack (2m breakable)</label>
+		</div>
+	  </div>
+</div>--> 
+
+	  
+ <!--<div id="opt_wing_size" class="option_line">
+  <label for="wing_size" class="option_name" id ="opt_name_wing_size">Wing Size</label>
+    <select class="value_option" id="wing_size" name="wing_size">
+      <option value="13">13</option>
+      <option value="14" selected>14</option>
+      <option value="15">15</option>
+    </select>
+  </div>-->
+  
+  </fieldset>  
+  
+  <fieldset id="sail_options" class="options_block">
+  <h2>Sail Options</h2> 
+  
+  <div id="opt_leading_edge" class="option_line">
+  <label for="leading_edge" class="option_name" id ="opt_name_leading_edge">Leading Edge</label>
+    <select class="value_option" id="leading_edge" name="leading_edge" onchange="SetColor(id, value)">
+      <option value="PX10T">DP PX10T - White</option>
+      <option value="PX10TUVP">DP PX10T UVP - White</option>
+      <option value="PE10CLEAR">DP PE10 - Clear</option>
+      <option value="PE10OPTIC">DP PE10 - Optic</option>
+      <option value="ODL06SMOKE">Technora - DP ODL06 Smoke</option>
+<!--      <option value="ODL06WHITEUV">Technora - DP ODL06 UVP White</option>-->
+	  <option value="DP170MT0000">White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100" selected>Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352">Dk. Blue - DP 170CMT (7352)</option>
+    </select>
+  </div> 
+  
+  <div id="opt_top_surface_front" class="option_line">
+  <label for="top_surface_front" class="option_name" id ="opt_name_top_surface_front">Top Surface Front</label>
+	<select class="value_option" id="top_surface_front" name="top_surface_front" onchange="SetColor(id, value)">
+	  <option value="NCVGRILL180">NCV 180 - Clear</option>
+	  <option value="PE10CLEAR">DP PE10 - Clear</option>
+      <option value="PE10OPTIC">DP PE10 - Optic</option>
+      <option value="ODL06SMOKE">Technora - DP ODL06 Smoke</option>
+<!--      <option value="ODL06WHITEUV">Technora - DP ODL06 UVP White</option>-->
+      <option value="DP170MT0000">White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100">Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352" selected>Dk. Blue - DP 170CMT (7352)</option>
+    </select>
+  </div>
+	  
+  <div id="opt_top_surface_rear" class="option_line">
+  <label for="top_surface_rear" class="option_name" id ="opt_name_top_surface_rear">Top Surface Rear</label>
+	<select class="value_option" id="top_surface_rear" name="top_surface_rear" onchange="SetColor(id, value)">
+      <option value="NCVGRILL180">NCV 180 - Clear</option>
+      <option value="PE10CLEAR">DP PE10 - Clear</option>
+      <option value="PE10OPTIC">DP PE10 - Optic</option>
+      <option value="ODL06SMOKE">Technora - DP ODL06 Smoke</option>
+      <option value="DP180HTPS" selected>White - DP HTP 180 Square</option>
+    </select>
+  </div>
+	  
+  <div id="opt_top_surface_rf" class="option_line">
+  <label for="top_surface_rf" class="option_name" id ="opt_name_top_surface_rf">Top Surface Reinforcement</label>
+	<select class="value_option" id="top_surface_rf" name="top_surface_rf" onchange="SetColor(id, value)">
+      <option value="DP170MT0000">White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100">Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352" selected>Dk. Blue - DP 170CMT (7352)</option>
+    </select>
+  </div>
+	  
+  <div id="opt_keel_pocket" class="option_line">
+  <label for="keel_pocket" class="option_name" id ="opt_name_keel_pocket">Keel Pocket</label>
+	<select class="value_option" id="keel_pocket" name="keel_pocket" onchange="SetColor(id, value)">
+      <option value="DP170MT0000">White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100" selected>Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352">Dk. Blue - DP 170CMT (7352)</option>
+    </select>
+  </div>
+
+  <div id="opt_trailing_edge" class="option_line">
+  <label for="trailing_edge" class="option_name" id ="opt_name_trailing_edge">Trailing Edge</label>
+	<select class="value_option" id="trailing_edge" name="trailing_edge" onchange="SetColor(id, value)">
+      <option value="DP170MT0000">White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100" selected>Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352">Dk. Blue - DP 170CMT (7352)</option>
+    </select>
+  </div>
+	  
+  <div id="opt_bottom_surface" class="option_line">
+  <label for="bottom_surface" class="option_name" id ="opt_name_bottom_surface">Bottom Surface</label>
+    <select class="value_option" id="bottom_surface" name="bottom_surface" onchange="SetColor(id, value)">
+      <option value="DP170MT0000">White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100">Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352" selected>Dk. Blue - DP 170CMT (7352)</option>
+    </select>
+  </div> 
+  
+  <div id="opt_battens" class="option_line">
+  <label for="battens" class="option_name" id ="opt_name_battens">Battens</label>
+    <select class="value_option" id="battens" name="battens" onchange="SetColor(id, value)">
+      <option value="DP170MT0000">White - DP 170CMT (0000)</option>
+	  <option value="DP170MT2100">Black - DP 170CMT (2100)</option>
+	  <option value="DP170MT2328">Grey - DP 170CMT (2328)</option>
+	  <option value="DP170MT3125">Red - DP 170CMT (3125)</option>
+	  <option value="DP170MT3105">Lt. Red - DP 170CMT (3105)</option>
+	  <option value="DP170MT4197">Orange - DP 170CMT (4197)</option>
+	  <option value="DP170MT5076">Yellow - DP 170CMT (5076)</option>
+	  <option value="DP170MT5280">Lt. Yellow - DP 170CMT (5280)</option>
+	  <option value="DP170MT6047">Green - DP 170CMT (6047)</option>
+	  <option value="DP170MT6094">Lt. Green - DP 170CMT (6094)</option>
+	  <option value="DP170MT7352" selected>Dk. Blue - DP 170CMT (7352)</option>
+    </select>
+  </div> 
+  	  
+  <div id="opt_letters" class="option_line">
+    <label for="letters" class="option_name" id ="opt_name_letters">Letters</label>
+    <select class="value_option" id="letters" name="letters" onchange="SetColor('letters', value)">
+		  <option value="no_letters">No Letters</option>
+		  <option value="INSIGRED">Red - Insignia PSA</option>
+		  <option value="INSIGBLACK" selected>Black - Insignia PSA</option>
+		  <option value="INSIGDKBLUE">Dk. Blue - Insignia PSA</option>
+    </select>
+  </div>
+  
+  </fieldset>
+  
+  <fieldset id="other_options" class="options_block v_transition_show">
+  <h2>Other Options</h2> 
+   <div id="opt_bag4m" class="option_line">
+  	<label class="option_name">Additional</label>
+	<div class="value_option checkbox_wrap">
+	  <input type="checkbox" name="bag4m" id="bag4m" value='Yes'/>
+	  <label for="bag4m">Special 4m transportation bag for wingfold on the trike</label>
+	</div>
+  </div>
+  
+  </fieldset>
+  
+  
+  <fieldset id="info" class="options_block" > 
+  <h2>Info</h2> 
+  
+  <div id="opt_date" class="option_line">
+  	<label for="date" class="option_name">Date</label>
+  	<input id="date" name="date" type="text" size="10" value="08.02.2015" ondblclick="SetDate(id)"/>
+  </div>
+  
+  <div id="opt_cust_ref" class="option_line">
+  	<label for="cust_ref" class="option_name">Reference</label>
+  	<input id="cust_ref" name="cust_ref" type="text" size="34" maxlength="34" placeholder="Your order reference"/>
+  </div>
+  
+  <div id="opt_dealer" class="option_line">
+  	<label for="dealer" class="option_name">Dealer</label>
+  	<input id="dealer" name="dealer" type="text" size="34" maxlength="34" placeholder="Dealer's name"/>
+  </div>
+  
+  <div id="opt_customer" class="option_line">
+  	<label for="customer" class="option_name">Customer</label>
+  	<input id="customer" name="customer" type="text" size="34" maxlength="34" placeholder="Customer's name"/>
+  </div>
+  
+  <div id="hidden_old_wing_data" class="v_transition_hide">
+  <div id="opt_old_wing_sail" class="option_line">
+  	<label for="old_wing_sail" class="option_name">Your Sail No.</label>
+  	<input id="old_wing_sail" name="old_wing_sail" type="text" size="34" maxlength="34" placeholder="Serial No. of sail to be replaced"/>
+  </div>
+  
+  <div id="opt_old_wing_frame" class="option_line">
+  	<label for="old_wing_frame" class="option_name">Your Frame No.</label>
+  	<input id="old_wing_frame" name="old_wing_frame" type="text" size="34" maxlength="34" placeholder="Serial No. of your wing frame"/>
+  </div>
+  </div>
+    
+  <div id="opt_notes" class="option_line">
+  	<label for="notes" class="option_name">Notes</label>
+    <div id="fix" style="margin-left: 4px; margin-right: 4px;">
+  	<textarea id="notes" name="notes" rows="4" oninput="NotesLimiter(id)" style="width: 100%; resize: vertical; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;" placeholder="Leave your comments here"></textarea>
+    
+    <div id="opt_notes_count">
+  	<span id="char_left"></span> characters left 
+    </div>
+  
+    </div>
+  </div>
+  
+  </fieldset>
+  
+  
+  <!-- Download button -->
+  <div id="download_button" class="noPrint" onclick="document.the_form.submit()">
+  <div style="display:table; padding:0px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom: 0px;">
+  <div style="display:table-cell; margin: 0px; padding: 0px; vertical-align: middle;">
+<svg version="1.1" id="download_arrow_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+<polygon fill="#FFFFFF" points="20,36.06 39,20.06 28,20.06 28,3.94 12,3.94 12,20.06 1,20.06 "/>
+</svg>
+</div>
+<div style="display:table-cell; margin: 0px; padding: 0px; vertical-align: middle;">
+<p id="download_text">DOWNLOAD PDF</p>
+</div>
+</div>
+  </div> <!-- end of Download button -->  
+  
+  
+  </form>
+  
+  
+  </div> <!-- end div_content -->
+  
+  
+  
+  </body>
+</html>

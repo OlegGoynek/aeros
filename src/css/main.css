@@ -1,0 +1,59 @@
+/* BOOTSTRAP GRID REBOOT */
+/* @import "bootstrap/bootstrap-grid.min.css";
+@import "bootstrap/bootstrap-reboot.min.css"; */
+
+/* SPECIFICATION */
+@import "blocks/specification.css";
+
+/* PRELOADER */
+@import "blocks/preloader.css";
+
+/* HEADER */
+@import "blocks/header.css";
+
+/* BURGER MENU */
+@import "blocks/burger-menu.css";
+
+/* HEAD SLIDER */
+@import "blocks/head-slider.css";
+
+/* PRODUCT SLIDERS */
+@import "blocks/product-sliders.css";
+
+/* PRODUCT PAGES */
+
+/* OFFER */
+@import "blocks/offer.css";
+
+/* ADVANTAGES */
+@import "blocks/advantages.css";
+
+/* MODIFICATIONS */
+@import "blocks/modifications.css";
+
+/* DETAILS */
+@import "blocks/details.css";
+
+/* TECHNICAL DATA */
+@import "blocks/technical-data.css";
+
+/* CONTACT US */
+@import "blocks/contact_us.css";
+
+/* DEALERS */
+@import "blocks/dealers.css";
+
+/* OUR CONTACT */
+@import "blocks/contact.css";
+
+/* SUPPORT */
+@import "blocks/support.css";
+
+/* ABOUT US */
+@import "blocks/about.css";
+
+/* FOOTER */
+@import "blocks/footer.css";
+
+/* RESPONSIVE */
+@import "blocks/responsive.css";

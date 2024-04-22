@@ -1,0 +1,47 @@
+.offer-slider {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.offer-slider-wrapper {
+	will-change: transform;
+}
+
+.offer-slider-slide {
+	height: 100%;
+	overflow: hidden;
+}
+
+.offer-slider-slide__bg {
+	height: 100vh;
+	position: relative;
+}
+
+.offer-slider__text-block {
+	position: absolute;
+	z-index: 100;
+	left: 5%;
+	bottom: 5dvh;
+	width: 90%;
+	height: min-content;
+	background-color: rgba(0 0 0 / 0);
+	padding: 0 3% 2% 3%;
+	border-radius: 16px;
+	transition: background-color var(--transition);
+}
+
+.offer-slider__text-block:hover {
+	background-color: rgba(0 0 0 / .6);
+}
+
+.offer-slider__title {
+	font-size: calc(var(--sizeIndex)*4)
+}
+
+.offer-slider__title span {
+	color: var(--accent);
+}

@@ -1,0 +1,7 @@
+.technical-data {
+	background: var(--dark);
+}
+
+.technical-data tr p {
+	background-color: rgba(0 0 0 / .6);
+}

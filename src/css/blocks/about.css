@@ -1,0 +1,73 @@
+.memorial-slider {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.memorial-slider-wrapper {
+	will-change: transform;
+}
+
+.memorial-slider-slide {
+	height: 100%;
+	overflow: hidden;
+}
+
+.memorial-slider-slide__bg {
+	height: 100vh;
+	position: relative;
+}
+
+.memorial-slider-slide__name {
+	position: absolute;
+	z-index: 100;
+	right: 15%;
+	bottom: 5%;
+}
+
+.memorial-slider-slide__text-block {
+	position: absolute;
+	z-index: 100;
+	right: 5%;
+	bottom: 10%;
+	width: 35%;
+	height: min-content;
+}
+
+.memorial-slider-slide__title {
+	font-size: calc(var(--sizeIndex)*4)
+}
+
+.memorial-slider-slide__title span {
+	color: var(--accent);
+}
+
+canvas {
+	position: absolute;
+	z-index: 10;
+}
+
+.about-us {
+	overflow: hidden;
+}
+
+.about-us__title {
+	font-size: calc(var(--sizeIndex)*4)
+}
+
+.about-us__title span {
+	color: var(--accent);
+}
+
+.about-us__milestone {
+	font-size: calc(var(--sizeIndex)*5);
+	line-height: 0.5;
+	color: var(--accent);
+}
+
+.our-team__spec {
+	text-align: end;
+}

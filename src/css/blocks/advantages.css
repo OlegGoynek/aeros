@@ -1,0 +1,20 @@
+.advantages {
+	background-color: var(--dark);
+	padding-top: 3%;
+}
+
+.advantage {
+	text-align: center;
+}
+
+.advantage__title {
+	margin-top: 20px;
+}
+
+.advantage__title {
+	font-size: calc(var(--sizeIndex)*0.9);
+}
+
+.advantage__text {
+	font-size: calc(var(--sizeIndex)*0.7);
+}

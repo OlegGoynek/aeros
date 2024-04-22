@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- ,maximum-scale=1 -->
+    <title>How to create a PDF</title>
+    <script type="text/javascript">
+	  function switch_ins(id){
+		  if ( document.getElementById(id).classList.contains('sel') ){return;}
+		  if(id==='win'){
+			  document.getElementById('win').classList.toggle('sel');
+			  document.getElementById('mac').classList.toggle('sel');
+			  document.getElementById('win_ins').classList.toggle('act');
+			  document.getElementById('mac_ins').classList.toggle('act');
+		  }
+		  else{
+			  document.getElementById('win').classList.toggle('sel');
+			  document.getElementById('mac').classList.toggle('sel');
+			  document.getElementById('win_ins').classList.toggle('act');
+			  document.getElementById('mac_ins').classList.toggle('act');
+		  }
+		  
+	  }
+    </script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    
+    <div id="content">
+    
+    <header>Create PDF with:</header>
+    
+    <div id="nav_top">
+      <div class="nav_button sel" id="win" onClick="switch_ins(id)"><span class="nav_button_text">Windows + Chrome</span></div>
+      <div class="nav_button" id="mac" onClick="switch_ins(id)"><span class="nav_button_text">Mac OSX + Safari</span></div> 
+    </div>
+    
+    <div id="win_ins" class="ins act">
+    <p>Click Print… in the menu or hit ctrl + P. </p>
+    <img src="pic/w1.jpg" width="800" height="300">
+    <p>In the menu on the left choose landscape layout and A4 paper size. If destination is not set to "Save as PDF" click Change…</p>
+    <img src="pic/w2.jpg" width="800" height"350">
+    <p>Choose "Save as PDF" from Local Destinations</p>
+    <img src="pic/w3.jpg" width="800" height="350">
+    <p>And that's it. Hit save button and choose where to save the file.</p>
+    <img src="pic/w4.jpg" width="800" height="450">
+    </div>
+    
+    <div id="mac_ins" class="ins">
+    <p>Click Print… in the menu or hit cmd + P. </p>
+    <img src="pic/m1.jpg" width="800" height="450">
+    <p>Choose landscape layout and A4 paper size. On the bottom left click on PDF and choose "Save as PDF…"</p>
+    <img src="pic/m2.jpg" width="800" height="500">
+    <p>Save resulting file.</p>
+    <img src="pic/m3.jpg" width="800" height="500">
+    </div>
+  
+    </div>
+  </body>
+</html>
