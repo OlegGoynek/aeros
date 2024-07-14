@@ -161,3 +161,36 @@
 	transform: rotate(90deg);
 	z-index: 20;
 }
+
+.scroll-down {
+	position: absolute;
+	bottom: 5dvh;
+	left: calc(50% - 30px);
+	width: 60px;
+	height: 40px;
+	z-index: 800;
+	transition: all var(--transition);
+}
+
+.scroll-down a {
+	width: 60px;
+	height: 60px;
+}
+
+.scroll-down span {
+	width: 20px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-95%, -50%) rotate(30deg);
+	background-color: #fff;
+}
+
+.scroll-down span:nth-last-of-type(2) {
+	transform: translate(-10%, -50%) rotate(-30deg);
+}
+
+.scroll-down:hover {
+	transform: scale(110%) translateY(10%);
+}
